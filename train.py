@@ -1,4 +1,3 @@
-import os
 import warnings
 import sys
 
@@ -37,7 +36,8 @@ if __name__ == "__main__":
     warnings.filterwarnings("ignore")
     np.random.seed(40)
 
-    # Read the wine-quality csv file (make sure you're running this from the root of MLflow!)
+    # Read the wine-quality csv file
+    # (make sure you're running this from the root of MLflow!)
     data_path = "data/wine-quality.csv"
     train_x, train_y, test_x, test_y = load_data(data_path)
 
